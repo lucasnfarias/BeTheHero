@@ -8,7 +8,6 @@ import api from '../../services/api';
 import styles from './styles';
 
 import logoImg from '../../assets/logo.png';
-import { useEffect } from 'react';
 
 export default function Incidents() {
     const [incidents, setIncidents] = useState([]);
@@ -73,7 +72,7 @@ export default function Incidents() {
                         <Text style={styles.incidentValue}>{incident.name}</Text>
 
                         <Text style={styles.incidentProp}>CASO:</Text>
-                        <Text style={styles.incidentValue}>{incident.title}}</Text>
+                        <Text style={styles.incidentValue}>{incident.title}</Text>
 
                         <Text style={styles.incidentProp}>VALOR:</Text>
                         <Text style={styles.incidentValue}>
